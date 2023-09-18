@@ -9,8 +9,10 @@ export default function Main() {
   return (
     <div className="flex flex-col justify-center items-center">
       <TotalTreeNumber />
+      {/* @ts-expect-error Async Server Component */}
       <MainBanner />
       <Layout>
+        {/* @ts-expect-error Async Server Component */}
         <Ranking />
         <IdeaSlide />
         <ColumnSlide />
